@@ -11,7 +11,8 @@ if (!isset($_SESSION['login'])) {
 require 'function.php';
 
 // Menampilkan semua data dari table mahasiswa berdasarkan nim secara Descending
-$karyawan = query("SELECT * FROM karyawan ORDER BY nik DESC");
+$karyawa = query("SELECT * FROM karyawan ORDER BY nik DESC");
+$karyawan = query("SELECT * FROM karyawan ORDER BY tgl_masuk"); //Desc dari tangal ter besar
 ?>
 <!DOCTYPE html>
 <html lang="en">
